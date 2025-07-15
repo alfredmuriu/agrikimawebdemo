@@ -64,7 +64,15 @@
                     <ul class="s-header__menu-links">
                         <li class="current"><a href="#intro" class="smoothscroll">Home</a></li>
                         <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="products.html">Products</a></li>
+                        <li class="dropdown">
+                            <a href="products.html">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">&nbsp;Natural Solutions</a></li>
+                                <li><a href="#">&nbsp;Supplements</a></li>
+                                <li><a href="#">&nbsp;Disinfectants</a></li>
+                                <li><a href="#">&nbsp;Injections</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#footer" class="smoothscroll">Download</a></li>
                         <li><a href="#footer" class="smoothscroll">Contact</a></li>
                     </ul> <!-- s-header__menu-links -->
@@ -126,8 +134,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M7 6v12l10-6z"></path></svg>
                                 <span class="u-screen-reader-text">Watch Video</span>
                             </a>
-                        </div>
-                        
+                        </div>                       
                     </div> <!-- s-intro__content-inner -->
 
                 </div> <!-- s-intro__content -->
@@ -163,8 +170,7 @@
                     </div>
                 </div> <!-- end section-header -->
 
-                <div class="row process-list list-block show-ctr block-lg-one-half block-tab-whole">
-    
+                <div class="row process-list list-block show-ctr block-lg-one-half block-tab-whole">    
                     <div class="column list-block__item">
                         <div class="list-block__title">
                             <h3 class="h5">Understand</h3>
@@ -191,8 +197,7 @@
                             today's farming demands without compromising tomorrow's health.
                             </p>
                         </div>
-                    </div> <!-- end list-block__item -->
-        
+                    </div> <!-- end list-block__item -->        
                     <div class="column list-block__item">
                         <div class="list-block__title">
                             <h3 class="h5">Empower</h3>
@@ -351,7 +356,7 @@
                     <div class="column lg-6 stack-on-1100 section-header__primary">
                         <h2 class="title text-display-1">
                             Agrikima provides high-quality organic solutions for animal 
-                            health and crop management—helping farms grow naturally and sustainably.
+                            health and crop management.
                         </h2>
                     </div>
                     <div class="column lg-6 stack-on-1100 section-header__secondary">
@@ -360,7 +365,7 @@
                         </p>
                     </div>
                 </div>
-                    <div class="row list-block block-lg-one-half block-tab-whole block-stack-on-1000 s-footer__btns">
+                    <div class="row list-block block-lg-one-half block-tab-whole block-stack-on-1000 s-footer__btns " style="margin-top: -60px; margin-bottom: 30px;">
                         <div class="column list-block__item">
                             <div class="s-footer__contact-btn">
                                 <a href="products.html" class="btn btn--primary u-fullwidth" style="background-color:rgb(2, 108, 106) !important;">
@@ -371,43 +376,129 @@
                     </div> <!-- end s-footer__btns -->
                     
 
-                 <!-- end section-header -->
-                    <h1 style="color: grey; font-family: 'Inter', sans-serif; font-size:50px; text-align: centre;">
-                        &nbsp;&nbsp;&nbsp;&nbsp;Best Selling Products
-                    </h1>
-                <div id="bricks" class="row bricks">
-                    <div class="column lg-12 masonry">
-                        <div class="bricks-wrapper">
-
-                            <div class="grid-sizer"></div>
-
-                            <article class="brick brick--double entry">
-                                <a href="#modal-01" class="entry__link">
-                                    <div class="entry__thumb">
-                                        <img src="images/folio/advice.jpeg" alt="ADVICE supplement product">
-                                    </div>
-                                    <div class="entry__info">
-                                        <div class="entry__cat">SUPPLEMENT</div>
-                                        <h4 class="entry__title">ADVICE</h4>
-                                    </div>
-                                </a>
-                            </article> <!-- entry -->
-
-                            <article class="brick brick--double entry">
-                                <a href="#modal-02" class="entry__link">
-                                    <div class="entry__thumb">
-                                        <img src="images/folio/agritonic.jpeg" alt="AGRITONIC supplement product">
-                                    </div>
-                                    <div class="entry__info">
-                                        <div class="entry__cat">SUPPLEMENT</div>
-                                        <h4 class="entry__title">AGRITONIC</h4>
-                                    </div>
-                                </a>
-                            </article> <!-- entry -->                            
-                        </div> <!-- end bricks-wrapper -->
-                        
-                    </div> <!-- end masonry -->                    
-                </div> <!-- end bricks -->
+                <!-- end section-header -->
+                    <div class="section-title-wrapper" style="text-align:center; margin-bottom: 40px;">
+                        <span style="
+                            display:block;
+                            font-size:120px;                           
+                            font-weight:900;
+                            color:#444;
+                            letter-spacing:-2px;
+                            font-family:'Inter',sans-serif;
+                            line-height:1;
+                        ">
+                            AGRIKIMA
+                        </span>
+                        <span style="
+                            display:block;
+                            font-size:70px;
+                            font-weight:900;
+                            color:rgb(2, 108, 106); /* Your green */
+                            letter-spacing:-2px;
+                            font-family:'Inter',sans-serif;
+                            margin-top:-50px;
+                            line-height:1;
+                        ">
+                            SOLUTIONS
+                        </span>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <a href="#">
+                                <img src="images/goat.jpg" alt="Natural Solutions">
+                                <div class="overlay-text">NATURAL SOLUTIONS</div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="#">
+                                <img src="images/cow1.jpg" alt="Supplements">
+                                <div class="overlay-text">SUPPLEMETS</div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="#">
+                                <img src="images/chicken2.jpg" alt="Disinfectants">
+                                <div class="overlay-text">DISINFECTANTS</div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="#">
+                                <img src="images/cow2.jpg" alt="Injection">
+                                <div class="overlay-text">INJECTION</div>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <!-- Move the following block inside .s-folio for consistent background -->
+                    <div class="section-title-wrapper" style="text-align:center; margin-bottom: 40px;"></div>
+                    <span style="
+                        display:block;
+                        font-size:60px;                           
+                        font-weight:900;
+                        color:#444;
+                        letter-spacing:-2px;
+                        font-family:'Inter',sans-serif;
+                        line-height:1;
+                        margin-top:100px;
+                        text-align:center;
+                    ">
+                    MOST POPULAR PRODUCTS
+                    </span>
+                    <div id="bricks" class="row bricks">
+                        <div class="column lg-12 masonry">
+                            <div class="bricks-wrapper">
+                                <div class="grid-sizer"></div>
+                                <article class="brick brick--double entry">
+                                    <a href="#modal-01" class="entry__link">
+                                        <div class="entry__thumb">
+                                            <img src="images/folio/advice.jpeg" alt="ADVICE supplement product">
+                                            <h4 style="text-align: center; color:white; margin-top:-10px; font-family:Inter, sans-serif;">Advice</h4>
+                                        </div>
+                                        <div class="entry__info">
+                                            <div class="entry__cat">SUPPLEMENT</div>
+                                            <h4 class="entry__title">ADVICE</h4>
+                                        </div>
+                                    </a>
+                                </article> <!-- entry -->
+                                <article class="brick brick--double entry">
+                                    <a href="#modal-02" class="entry__link">
+                                        <div class="entry__thumb">
+                                            <img src="products/agritonic_1l.png" style="height: 375px;" alt="AGRITONIC supplement product">
+                                            <h4 style="text-align: center; color:white; margin-top:-10px; font-family:Inter, sans-serif;">Agri-Tonic</h4>
+                                        </div>
+                                        <div class="entry__info">
+                                            <div class="entry__cat">SUPPLEMENT</div>
+                                            <h4 class="entry__title">AGRITONIC</h4>
+                                        </div>
+                                    </a>
+                                </article> <!-- entry --> 
+                                <article class="brick brick--double entry">
+                                    <a href="#modal-03" class="entry__link">
+                                        <div class="entry__thumb">
+                                            <img src="products/Bio-Gar_1kg.png" alt="BIO-GAR supplement product">
+                                            <h4 style="text-align: center; color:white; margin-top:-10px; font-family:Inter, sans-serif;">BIO-GAR</h4>
+                                        </div>
+                                        <div class="entry__info">
+                                            <div class="entry__cat">SUPPLEMENT</div>
+                                            <h4 class="entry__title">BIO-GAR</h4>
+                                        </div>
+                                    </a>
+                                </article> <!-- entry -->     
+                                <article class="brick brick--double entry">
+                                    <a href="#modal-04" class="entry__link">
+                                        <div class="entry__thumb">
+                                            <img src="products/agrivitam_1l.png" style="height: 375px;" alt="AGRIVITAM supplement product">
+                                            <h4 style="text-align: center; color:white; margin-top:-10px; font-family:Inter, sans-serif;">Agrivitam</h4>
+                                        </div>
+                                        <div class="entry__info">
+                                            <div class="entry__cat">SUPPLEMENT</div>
+                                            <h4 class="entry__title">AGRIVITAM</h4>
+                                        </div>
+                                    </a>
+                                </article> <!-- entry -->                                                        
+                            </div> <!-- end bricks-wrapper -->
+                        </div> <!-- end masonry -->                    
+                    </div> <!-- end bricks -->
 
 
                 <!-- modal templates popup
@@ -420,12 +511,7 @@
                             <h5>ADVICE</h5>
                             <p>ADVICE is a natural immunity-boosting supplement designed
                                 to protect poultry against viral infections like Newcastle
-                                disease and infectious bronchitis. Made from powerful plant 
-                                extracts such as garlic, cinnamon, aloe vera, and echinacea, 
-                                it strengthens the immune system, supports digestion, and promotes
-                                healthy growth. With added antiviral properties, ADVICE helps 
-                                improve overall flock health. Administered through drinking water,
-                                it is easy to use and effective as part of a regular health management program.
+                                disease and infectious bronchitis. 
                             </p>                            
                         </div>                        
                     </div>
@@ -433,19 +519,12 @@
 
                 <div id="modal-02" hidden>
                     <div class="modal-popup">
-                        <img src="images/folio/agritonic.jpeg" alt="AGRITONIC supplement product">
+                        <img src="products/agritonic_1l.png" alt="AGRITONIC supplement product">
             
                         <div class="modal-popup__desc">
                             <h5>AGRITONIC</h5>
                             <p>Agritonin is a powerful liquid feed supplement formulated to support optimal 
-                                poultry health and productivity. Each milliliter delivers a concentrated blend
-                                of key nutrients—including 5 g vitamin E, 30 g sorbitol, and significant 
-                                levels of sodium, calcium, ammonium and potassium propionates, alongside 
-                                essential amino acids like DL‑methionine, L‑lysine and threonine—designed to strengthen
-                                antioxidant protection, improve digestion, and enhance growth performance.
-                                Administered directly via drinking water, Agritonin is easy to use, making
-                                it ideal for routine supplementation and during stress periods to maintain
-                                vitality and robust health across your flock.
+                                poultry health and productivity.
                             </p>
                         </div>                        
                     </div>
@@ -453,11 +532,12 @@
 
                 <div id="modal-03" hidden>
                     <div class="modal-popup">
-                        <img src="images/folio/gallery/g-grayscale.jpg" alt="">
-            
+                        <img src="products/Bio-Gar_1kg.png" alt="BIO-GAR supplement product">
                         <div class="modal-popup__desc">
-                            <h5>Grayscale</h5>
-                            <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
+                            <h5>BIO-GAR</h5>
+                            <p>BIO-GAR is a natural feed supplement designed to enhance gut health and overall well-being in poultry.
+                                Formulated with a unique blend of probiotics, prebiotics, and essential nutrients, 
+                            </p>
                             <ul class="modal-popup__cat">
                                 <li>Product Design</li>
                             </ul>
@@ -467,43 +547,13 @@
 
                 <div id="modal-04" hidden>
                     <div class="modal-popup">
-                        <img src="images/folio/gallery/g-lamp.jpg" alt="">
-            
+                        <img src="products/agrivitam_1l.png" alt="AGRIVITAM supplement product">
+
                         <div class="modal-popup__desc">
-                            <h5>The Lamp</h5>
-                            <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                            <h5>AGRIVITAM</h5>
+                            <p>AGRIVITAM is a premium liquid vitamin and mineral supplement designed to support the overall health and productivity of poultry.</p>
                             <ul class="modal-popup__cat">
                                 <li>E-Commerce</li>
-                            </ul>
-                        </div>                        
-                    </div>
-                </div> <!-- end modal -->
-
-                <div id="modal-05" hidden>
-                    <div class="modal-popup">
-
-                        <img src="images/folio/gallery/g-tropical.jpg" alt="">
-            
-                        <div class="modal-popup__desc">
-                            <h5>Tropical</h5>
-                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                            <ul class="modal-popup__cat">
-                                <li>Frontend Design</li>
-                            </ul>
-                        </div>                        
-                    </div>
-                </div> <!-- end modal -->
-
-                <div id="modal-06" hidden>
-                    <div class="modal-popup">
-                        <img src="images/folio/gallery/g-woodcraft.jpg" alt="">
-            
-                        <div class="modal-popup__desc">
-                            <h5>Woodcraft</h5>
-                            <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
-                            <ul class="modal-popup__cat">
-                                <li>E-Commerce</li>
-                                <li>Product Design</li>
                             </ul>
                         </div>                        
                     </div>
@@ -521,7 +571,7 @@
                 <div class="column lg-6 stack-on-1100 section-header__primary">
                     <h2 class="title text-display-1">
                     Looking for natural solutions, farmer support, or a reliable agricultural partner?
-                    <br>We're just a message away. Talk to us at
+                    <br>We're just a message away. Email to us at
                     <a href="mailto:info@agrikima.co.ke" title="">info@agrikima.co.ke</a>
                     </h2>
                 </div>    
