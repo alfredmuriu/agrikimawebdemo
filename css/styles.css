@@ -318,8 +318,6 @@
  *
  *
  * --------------------------------------------------------------------
- * normalize.css v8.0.1 | MIT License |
- * github.com/necolas/normalize.css
  * -------------------------------------------------------------------- */
 html {
     line-height              : 1.15;
@@ -3908,7 +3906,14 @@ img.u-pull-left {
 .bricks-wrapper .brick {
     float   : left;
     padding : 0;
+    width: 25% !important;
 }
+.bricks-wrapper .bricks {
+    float   : left;
+    padding : 0;
+    width: 50% !important;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## masonry entries 
@@ -4038,7 +4043,10 @@ img.u-pull-left {
 }
 
 .modal-popup img {
+    height: 300px;
+    width: 200px;
     margin-bottom : var(--vspace-0_75);
+    
 }
 
 .modal-popup h5 {
@@ -4672,3 +4680,187 @@ img.u-pull-left {
         width  : var(--vspace-1_5);
     }
 }
+
+/* Dropdown styles for Products menu */
+.s-header__menu-links > .dropdown {
+    position: relative;
+}
+
+.s-header__menu-links > .dropdown > .dropdown-menu {
+    display: block;
+    opacity: 0;
+    transform: translateY(20px) scaleY(0.95); /* Slide in from below */
+    pointer-events: none;
+    transition: 
+        opacity 0.35s cubic-bezier(0.4,0,0.2,1),
+        transform 0.35s cubic-bezier(0.4,0,0.2,1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(2, 108, 106);
+    width: 220px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.s-header__menu-links > .dropdown:hover > .dropdown-menu,
+.s-header__menu-links > .dropdown:focus-within > .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    pointer-events: auto;
+}
+
+.s-header__menu-links > .dropdown > .dropdown-menu li {
+    list-style: none;
+}
+
+.s-header__menu-links > .dropdown > .dropdown-menu a {
+    display: block;
+    color: #fff !important;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-weight: 500;
+    background: none;
+    transition: background 0.2s;
+}
+
+.s-header__menu-links > .dropdown > .dropdown-menu a:hover {
+    background: #155e5d;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+    text-decoration: underline;
+}
+
+/* 2x2 Grid Layout for Images */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 equal columns */
+    grid-template-rows: 200px 250px; /* 2 equal rows, 250px each */
+    gap: 10px; /* Space between grid items */
+    margin: 40px auto;
+    width: 80%;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Individual grid item sizing - you can adjust these */
+.grid-item:nth-child(1) {
+    /* First item - top left */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.grid-item:nth-child(2) {
+    /* Second item - top right */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.grid-item:nth-child(3) {
+    /* Third item - bottom left */
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.grid-item:nth-child(4) {
+    /* Fourth item - bottom right */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-rows: repeat(4, 250px); /* 4 rows on mobile */
+        gap: 15px;
+    }
+    
+    .grid-item:nth-child(1),
+    .grid-item:nth-child(2),
+    .grid-item:nth-child(3),
+    .grid-item:nth-child(4) {
+        grid-column: 1 / 2; /* All items span full width on mobile */
+    }
+    
+    .grid-item:nth-child(1) { grid-row: 1 / 2; }
+    .grid-item:nth-child(2) { grid-row: 2 / 3; }
+    .grid-item:nth-child(3) { grid-row: 3 / 4; }
+    .grid-item:nth-child(4) { grid-row: 4 / 5; }
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Inter", sans-serif;
+    pointer-events: none; /* So the link is clickable everywhere */
+}
+
+/* Custom sizing examples - uncomment and modify as needed */
+/*
+.grid-item:nth-child(1) {
+    grid-column: 1 / 3; 
+    grid-row: 1 / 2;
+}
+
+.grid-item:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.grid-item:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.grid-item:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+*/
+
+.bricks-wrapper .entry__thumb img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    object-position: center center;
+    width: 100%;
+    max-width: 100%;
+    height: 375px;
+    background: transparent;
+}
+
